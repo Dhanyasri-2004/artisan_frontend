@@ -1,0 +1,114 @@
+/* ✅ Background settings */
+.login-page {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f9e0ae, #e4a672);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url("C:\Users\dhany\Desktop\Artisan_Website\artisan_alley\public\images\background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* ✅ Login box */
+.login-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    width: 350px;
+}
+
+.login-box h2 {
+    margin-bottom: 1rem;
+    color: #d2691e;
+    font-weight: lighter;
+}
+
+/* ✅ Input fields */
+.input-group {
+    margin-bottom: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Ensures label stays above input */
+}
+
+.input-group label {
+    font-weight: lighter;
+    display: block; /* ✅ Makes label appear above input */
+    margin-bottom: 5px;
+    color: black !important; /* Ensures visibility */
+}
+
+/* ✅ Fix for input text visibility */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white !important; /* Force white */
+    border-radius: 5px;
+    font-size: 16px;
+    color: black !important; /* ✅ Ensures text inside input is visible */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* ✅ Button styles */
+.login-btn1 {
+    background: #d2691e;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 40%;
+    font-size: 16px;
+}
+
+.login-btn1:hover {
+    background: #b55e1f;
+}
+
+/* ✅ Footer */
+.login-footer {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login-footer a {
+    color: #d2691e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ✅ Error message */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* ✅ Logo container */
+.logo-container {
+    display: flex;
+    align-items: center;  /* Align logo and text vertically */
+    justify-content: start;  /* Align content to the left */
+    gap: 10px; /* Space between logo and text */
+    margin-bottom: 10px;
+}
+
+/* ✅ Logo size */
+.logo2 {
+    height: 40px;
+    width: auto;
+}

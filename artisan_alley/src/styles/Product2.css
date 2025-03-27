@@ -1,0 +1,114 @@
+/* Ensure the entire page has a white background */
+
+  /* Center the product container */
+  .product2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full-page height */
+    width: 100%;
+    padding: 20px;
+    background: white;
+  }
+
+  /* Product card */
+  .product2-card {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 1000px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    overflow: hidden;
+  }
+  
+  /* Left side - Image */
+  .product2-image {
+    flex: 1;
+    max-width: 45%;
+    text-align: center;
+    padding: 20px;
+    background: #f3e5f5; /* Light purple background */
+  }
+  
+  .product2-image img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Right side - Product details */
+  .product2-details {
+    flex: 1;
+    max-width: 55%;
+    padding: 30px;
+    background: white;
+    text-align: left;
+  }
+  
+  .product2-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a148c; /* Deep purple */
+    margin-bottom: 10px;
+  }
+  
+  .product2-description {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .product2-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6a1b9a;
+    margin-top: 10px;
+  }
+  
+  /* Actions */
+  .product2-actions {
+    margin-top: 20px;
+  }
+  
+  .product2-cart-btn {
+    padding: 12px 18px;
+    font-size: 16px;
+    background: #6a1b9a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .product2-cart-btn:hover {
+    background: #4a148c;
+    transform: scale(1.05);
+  }
+  
+  .product2-disabled-btn {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .product2-card {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product2-image {
+      max-width: 100%;
+    }
+  
+    .product2-details {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+  

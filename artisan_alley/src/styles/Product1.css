@@ -1,0 +1,199 @@
+/* Ensure the entire page has a white background */
+body {
+  background: white;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Elegant Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(74, 20, 140, 0.9) !important; /* Elegant deep purple */
+  padding: 15px 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-links a:hover {
+  color: #f3e5f5;
+}
+
+/* Center the product container */
+.product2-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full-page height */
+  width: 100%;
+  padding: 80px 20px; /* Added padding to prevent overlap with navbar */
+  background: white;
+}
+
+/* Product card */
+.product2-card {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  max-width: 1000px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15); /* Elegant soft shadow */
+  overflow: hidden;
+}
+
+/* Left side - Image */
+.product2-image {
+  flex: 1;
+  max-width: 45%;
+  text-align: center;
+  padding: 20px;
+  background: #f3e5f5; /* Light purple background */
+}
+
+.product2-image img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Right side - Product details */
+.product2-details {
+  flex: 1;
+  max-width: 55%;
+  padding: 40px;
+  background: white;
+  text-align: left;
+}
+
+.product2-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #4a148c; /* Deep purple */
+  margin-bottom: 12px;
+}
+
+.product2-description {
+  font-size: 17px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.product2-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #6a1b9a;
+  margin-top: 12px;
+}
+
+/* Actions */
+.product2-actions {
+  margin-top: 20px;
+}
+
+.product2-cart-btn {
+  padding: 14px 20px;
+  font-size: 17px;
+  background: #6a1b9a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.product2-cart-btn:hover {
+  background: #4a148c;
+  transform: scale(1.05);
+}
+
+.product2-disabled-btn {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .product2-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product2-image {
+    max-width: 100%;
+  }
+
+  .product2-details {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .navbar-links {
+    gap: 10px;
+  }
+
+  .navbar-title {
+    font-size: 18px;
+  }
+}
+.btn1, .btn2 {
+  width: 100px !important;
+  background-color: #6a1b9a !important;
+  color: white !important;
+  border: none !important;
+  padding: 10px !important;
+  font-size: 16px !important;
+  cursor: pointer !important;
+  border-radius: 6px !important;
+  transition: background 0.3s ease-in-out !important;
+}
+
+/* Specific margins for btn1 */
+.btn1 {
+  margin-right: 20px !important;
+  margin-left: 135px !important;
+  margin-top: 40px !important;
+}
+
+/* Hover effect */
+.btn1:hover, .btn2:hover {
+  background-color: #4a148c !important; /* Deeper purple */
+}
+

@@ -1,0 +1,505 @@
+/* General Styling */
+.artisan-body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* Header Styling */
+.artisan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3); /* Transparent effect */
+  padding: 15px 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.artisan-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.artisan-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.artisan-logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.artisan-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.artisan-nav ul li {
+  margin: 0 15px;
+}
+
+.artisan-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.artisan-nav ul li a:hover {
+  color: #d1c4e9;
+}
+
+/* Fullscreen Slideshow */
+.artisan-slideshow {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.artisan-slideshow-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.artisan-slideshow-image.active {
+  opacity: 1;
+}
+
+.artisan-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.artisan-slideshow-text {
+  position: absolute;
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.artisan-slideshow-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.artisan-shop-now {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #8e24aa;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.artisan-shop-now:hover {
+  background: #6a1b9a;
+}
+
+/* Line Separator Below Slideshow */
+.artisan-line {
+  width: 80%;
+  height: 2px;
+  background-color: #6a1b9a;
+  margin: 20px auto;
+}
+
+/* Artisan Excellence Section */
+.artisan-excellence {
+  text-align: center;
+  padding: 50px 10%;
+  background: white;
+}
+
+.artisan-excellence h2 {
+  font-size: 32px;
+  color: #6a1b9a;
+}
+
+.artisan-subtitle {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Feature Section */
+.artisan-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.artisan-features {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  text-align: center;
+}
+
+.artisan-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.artisan-icon {
+  font-size: 28px;
+  color: #8e24aa;
+  margin-bottom: 10px;
+}
+
+.artisan-feature h3 {
+  font-size: 18px;
+  color: #6a1b9a;
+  margin: 5px 0;
+}
+
+.artisan-feature p {
+  color: #555;
+}
+
+/* Image Section */
+.artisan-image-container {
+  width: 35%;
+  text-align: center;
+}
+
+.artisan-image-container img {
+  width: 80%;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+/* Product Section */
+.artisan-product-gallery22 {
+  text-align: center;
+  padding: 50px 10%;
+  background: #f3e5f5;
+}
+
+.artisan-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+.artisan-shop-now{
+  width: 170px;
+  text-decoration: none !important;
+}
+.textc{
+  color: #8e24aa;
+  font-weight: lighter;
+  font-size: 40px;
+}
+.artisan-product-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.artisan-product-card:hover {
+  transform: scale(1.05);
+}
+
+.artisan-product-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.artisan-product-info {
+  padding: 10px 0;
+}
+
+.artisan-product-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #6a1b9a;
+}
+
+.artisan-product-brand {
+  color: #888;
+}
+
+.artisan-product-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #8e24aa;
+  margin: 10px 0;
+}
+
+.artisan-add-to-cart-btn {
+  padding: 10px 15px;
+  font-size: 14px;
+  background: #6a1b9a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.artisan-add-to-cart-btn:hover {
+  background: #4a148c;
+}
+
+.artisan-add-to-cart-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Footer Section */
+.artisan-footer {
+  background: #6a1b9a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.artisan-footer p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .artisan-header {
+    padding: 15px 20px;
+  }
+
+  .artisan-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .artisan-features {
+    width: 100%;
+    text-align: center;
+  }
+
+  .artisan-image-container {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  .artisan-product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .artisan-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .artisan-nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .artisan-nav ul li {
+    margin: 5px 0;
+  }
+
+  .artisan-content {
+    flex-direction: column;
+  }
+
+  .artisan-features {
+    width: 100%;
+    text-align: center;
+  }
+
+  .artisan-image-container {
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  .artisan-product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+
+.contact-container {
+  background-color: #f8f8f8;
+  padding: 60px 0;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+}
+
+/* Left Section */
+.contact-left {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+}
+
+.contact-logo {
+  display: flex;
+  align-items: center;
+}
+
+.contact-logo-img {
+  width: 50px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6a1b9a;
+}
+
+.contact-tagline {
+  font-size: 1rem;
+  color: #555;
+  max-width: 250px;
+  margin-top: 5px;
+}
+
+.contact-social-icons p {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.contact-social-icons img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+/* Middle Section */
+.contact-middle {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+}
+
+.contact-middle h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-middle p {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.contact-middle img {
+  width: 18px;
+  margin-right: 8px;
+}
+
+/* Right Section */
+.contact-right1 {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.contact-right1 h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 330px;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact-form button {
+  background-color: #6a1b9a;
+  color: #fff;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #4a148c;
+}
+
+/* Footer */
+.contact-footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+  color: #555;
+}
+.artisan-product-card a {
+  text-decoration: none;
+}
+
+.artisan-product-card a:hover {
+  text-decoration: none;
+}

@@ -1,0 +1,97 @@
+/* Ensure the product gallery takes full height and allows scrolling */
+.artisan-product-gallery {
+    max-height: 80vh !important; /* Limits height to 80% of the viewport */
+    overflow-y: auto !important; /* Enables vertical scrolling */
+    padding: 20px !important;
+    background: #f3e5f5 !important; /* Maintains the existing background */
+  }
+  .artisan-header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #6a1b9a !important;/* Transparent effect */
+    padding: 15px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 50px;
+  }
+  
+  /* Style the scrollbar */
+  .artisan-product-gallery::-webkit-scrollbar {
+    width: 10px !important;
+  }
+  
+  .artisan-product-gallery::-webkit-scrollbar-thumb {
+    background: #6a1b9a !important;
+    border-radius: 5px !important;
+  }
+  
+  .artisan-product-gallery::-webkit-scrollbar-track {
+    background: #f3e5f5 !important;
+  }
+  
+  /* Ensure products are arranged in exactly 4 columns with reduced width */
+  .artisan-product-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(200px, 1fr)) !important; /* 4 products per row with reduced width */
+    gap: 15px !important; /* Reduced gap for better alignment */
+    justify-content: center !important; /* Ensures left alignment */
+  }
+  
+  /* Product card styling with slightly reduced width */
+  .artisan-product-card {
+    background: white !important;
+    padding: 12px !important; /* Slightly reduced padding */
+    max-width: 260px !important; /* Reduced max width */
+    border-radius: 10px !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1) !important;
+    text-align: center !important;
+  }
+  
+  /* Ensure images don't overflow */
+  .artisan-product-img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 180px !important; /* Slightly smaller images */
+    object-fit: cover !important;
+    border-radius: 8px !important;
+  }
+  
+  /* Make sure buttons and text align properly */
+  .artisan-add-to-cart-btn {
+    width: 100% !important;
+    padding: 8px !important; /* Slightly smaller button */
+    font-size: 13px !important;
+    background: #6a1b9a !important;
+    color: white !important;
+    border: none !important;
+    cursor: pointer !important;
+    border-radius: 5px !important;
+    transition: background 0.3s !important;
+  }
+  
+  .artisan-add-to-cart-btn:hover {
+    background: #4a148c !important;
+  }
+  
+  /* Make sure there are always 4 products in a row, even on smaller screens */
+  @media (max-width: 1024px) {
+    .artisan-product-grid {
+      grid-template-columns: repeat(4, minmax(180px, 1fr)) !important;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .artisan-product-grid {
+      grid-template-columns: repeat(4, minmax(160px, 1fr)) !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .artisan-product-grid {
+      grid-template-columns: repeat(4, minmax(140px, 1fr)) !important;
+    }
+  }
+  

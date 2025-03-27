@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    color: #9e9ea4;
+    font-family: 'Montserrat', sans-serif;
+  }
+/* ================== General Styling ================== */
+
+.icon {
+  vertical-align: middle !important;
+  line-height: 1px !important;
+  font-size: 20px !important;
+}
+
+.icon_header {
+  vertical-align: middle !important;
+  line-height: 1px !important;
+  font-size: 26px !important;
+}
+
+.icon, .icon_header {
+  margin-right: 5px !important;
+}
+
+.close_icon {
+  color: red !important;
+  margin-left: 30px !important;
+  margin-top: 10px !important;
+  cursor: pointer !important;
+}
+
+/* ================== Grid Layout ================== */
+.grid-container {
+  display: grid !important;
+  grid-template-columns: 260px 1fr 1fr 1fr !important;
+  grid-template-rows: 0.2fr 3fr !important;
+  grid-template-areas:
+      'sidebar header header header'
+      'sidebar main main main' !important;
+  height: 100vh !important;
+}
+
+/* ================== Header ================== */
+.header {
+  grid-area: header !important;
+  height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 0 30px 0 30px !important;
+  box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35) !important;
+}
+
+.menu-icon {
+  display: none !important;
+}
+
+/* ================== Sidebar ================== */
+#sidebar {
+  grid-area: sidebar !important;
+  height: 100% !important;
+  background-color: #263043 !important;
+  overflow-y: auto !important;
+  transition: all 0.5s !important;
+  -webkit-transition: all 0.5s !important;
+}
+
+.sidebar-title {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 15px 30px 0px 30px !important;
+  margin-bottom: 30px !important;
+}
+
+.sidebar-title > span {
+  display: none !important;
+}
+
+.sidebar-brand {
+  margin-top: 15px !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+}
+
+.sidebar-list {
+  padding: 0 !important;
+  list-style-type: none !important;
+}
+
+.sidebar-list-item {
+  padding: 20px 20px 20px 20px !important;
+  font-size: 18px !important;
+}
+
+.sidebar-list-item:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  cursor: pointer !important;
+}
+
+.sidebar-list-item > a {
+  text-decoration: none !important;
+  color: #9e9ea4 !important;
+}
+
+.sidebar-responsive {
+  display: inline !important;
+  position: absolute !important;
+  z-index: 12 !important;
+}
+
+/* ================== Main Content ================== */
+.main-container {
+  grid-area: main !important;
+  overflow-y: auto !important;
+  padding: 20px 20px !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.main-title {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.main-cards {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr 1fr !important;
+  gap: 20px !important;
+  margin: 15px 0 !important;
+}
+
+.card {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-around !important;
+  padding: 8px 15px !important;
+  border-radius: 5px !important;
+}
+
+.card:first-child {
+  background-color: #2962ff !important;
+}
+
+.card:nth-child(2) {
+  background-color: #ff6d00 !important;
+}
+
+.card:nth-child(3) {
+  background-color: #2e7d32 !important;
+}
+
+.card:nth-child(4) {
+  background-color: #d50000 !important;
+}
+
+.card-inner {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.card-inner > .card_icon {
+  font-size: 25px !important;
+}
+
+/* ================== Charts ================== */
+.charts {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 20px !important;
+  margin-top: 60px !important;
+  height: 300px !important;
+}
+
+/* ================== Responsive Design ================== */
+
+/* Medium <= 992px */
+@media screen and (max-width: 992px) {
+  .grid-container {
+      grid-template-columns: 1fr !important;
+      grid-template-rows: 0.2fr 3fr !important;
+      grid-template-areas:
+          'header'
+          'main' !important;
+  }
+
+  #sidebar {
+      display: none !important;
+  }
+
+  .menu-icon {
+      display: inline !important;
+  }
+
+  .sidebar-title > span {
+      display: inline !important;
+  }
+}
+
+/* Small <= 768px */
+@media screen and (max-width: 768px) {
+  .main-cards {
+      grid-template-columns: 1fr !important;
+      gap: 10px !important;
+      margin-bottom: 0 !important;
+  }
+
+  .charts {
+      grid-template-columns: 1fr !important;
+      margin-top: 30px !important;
+  }
+}
+
+/* Extra Small <= 576px */
+@media screen and (max-width: 576px) {
+  .hedaer-left {
+      display: none !important;
+  }
+}
+
+
+/* ================== Header Styling ================== */
+
+.header {
+  grid-area: header !important;
+  height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 0 30px !important;
+  background-color: #1e1e2f !important;
+  color: white !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5) !important;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Left Section */
+.header-left {
+  display: flex !important;
+  align-items: center !important;
+  gap: 15px !important;
+}
+
+/* Right Section */
+.header-right {
+  display: flex !important;
+  align-items: center !important;
+  gap: 20px !important;
+}
+
+/* Menu Icon */
+.menu-icon {
+  display: flex !important;
+  align-items: center !important;
+  cursor: pointer !important;
+}
+
+/* Icons Styling */
+.icon {
+  font-size: 20px !important;
+  color: white !important;
+  cursor: pointer !important;
+  transition: color 0.3s ease !important;
+}
+
+.icon:hover {
+  color: #007bff !important;  /* Changes to blue on hover */
+}
